@@ -101,6 +101,9 @@
         color: white;
         font-size: 85pt;
     }
+    .time_purple_web {
+        display: none;
+    }
     .time_and_temp {
         display: flex;
         flex-direction: row;
@@ -176,4 +179,156 @@
         }
     }
     /* ----- WHITE PORTION ----- */
+}
+
+/* tablet view */
+@media screen and (min-width: 481px) and (max-width: 850px) {
+
+}
+
+/* Web view */
+@media screen and (min-width: 851px) {
+    html {
+        height: 100%;
+        /* overflow: hidden; */
+    }
+    .body {
+        display: flex;
+        flex-direction: column;
+        font-family: 'IBM Plex Sans', sans-serif;
+        /* overflow: hidden; */
+    }
+    .purple_display {
+        display: flex;
+        flex-direction: row;
+        padding-left: 90px;
+        padding-top: 60px;
+        padding-right: 0px;
+        background: linear-gradient(to bottom, rgb(73, 138, 220) 10%, rgb(98, 59, 156) 80%);
+    }
+    .left_purple {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 60%;
+    }
+    #title {
+        color: white;
+        font-size: 3.8vw;
+        font-weight: 400;
+        padding-bottom: 15px;
+        white-space: nowrap;
+    }
+    #subtitle {
+        color: rgb(49, 49, 147);
+        font-size: 2.48vw;
+        font-weight: 400;
+        padding-bottom: 35px;
+    }
+    .input_block {
+        display: flex;
+        flex-direction: row;
+        flex-basis: 10%;
+        flex-wrap: wrap;
+        color: white;
+        font-size: 2vw;
+        padding-bottom: 50px;
+        white-space: nowrap;
+    }
+    #forecast_for {
+        padding-right: 40px;
+    }
+    .field_and_button {
+        flex-basis: 60%;   
+    }
+    #text_field {
+        width: 60%;
+        height: 64%;
+        background-color: rgb(49, 49, 147);
+        font-size: 80%;
+        color: white;
+        border: none;
+        font-weight: 100;
+        padding-left: 30px;
+    }
+    input:focus {
+        outline-width: 0;
+    }
+    #btnSubmit {
+        background-color: rgb(73, 138, 220);
+        color: white;
+        font-size: 1.2vw;
+        font-weight: 100;
+        border: none;
+        height: 30px;
+        padding: 20px;
+        margin: 0px 20px 0px 10px; 
+        vertical-align: middle;
+        text-align: center;
+        line-height: 10%;
+    }
+    .current_forecast {
+        display: flex;
+        flex-direction: row;
+        color: white;
+        font-weight: 100;
+    }
+    .time_purple_web {
+        padding-left: 6%;
+        padding-top: 5%;
+        font-size: 2vw;
+        text-align: center;
+    }
+    #current_img {
+        width: 100%;
+        flex-basis: 42%;
+    }
+    #current_temp {
+        flex-basis: 5%;
+        padding-top: 20%;
+        padding-right: 15%;
+        font-size: 6vw;
+        text-align: center;
+    }
+    .time_purple {
+        display: none;
+    }
+    #hr_purple {
+        display: none;
+    }
+    .right_purple {
+        flex-basis: 35%;
+    }
+    #top1 {
+        border-radius: 50%;
+        position: absolute;
+        z-index: 1;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+    }
+    #top2 {
+        border-radius: 50%;
+        position: absolute;
+        z-index: 2;
+    }
+    #top3 {
+        position: relative;
+        z-index: 3;
+    }
+    .white_display {
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(to top, white 80%, gray 100%);
+        height: 400px;
+    }
+    .five_day {
+        display: flex;
+        flex-direction: row;
+    }
+    .five_day img {
+        width:30%;
+    }
+
+    footer {
+        display: none;
+    }
 }
