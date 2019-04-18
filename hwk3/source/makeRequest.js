@@ -54,11 +54,11 @@ function makeCorsRequest() {
       icon.src = "../assets/mist.svg";
     }
 
-    current_temp.innerHTML = Math.round(object.list[0].main.temp) + "&deg;";
-
+    let degree = "&#176;"
+    current_temp.textContent = (Math.round(object.list[0].main.temp)).toString().concat('\xB0');
     let tempTime = new Date();
     let time = tempTime.toLocaleString('en-US', { hour: 'numeric', hour12: true });
-    current_time.innerHTML = time;
+    current_time.textContent = time.toString();
 
     console.log(JSON.stringify(object, undefined, 2));
   };
