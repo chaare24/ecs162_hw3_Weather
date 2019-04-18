@@ -28,18 +28,30 @@ function makeCorsRequest() {
 
     let icon = document.getElementById("current_img");
     let objectIcon = object.list[0].weather[0].icon;
-    if (objectIcon == '01d' || objectIcon == '02d') {
-      icon.src = "C:/Users/micor/OneDrive/Documents/GitHub/ecs162/hwk3/assets/clearsky.svg";
-    } else if (objectIcon == '01n' || objectIcon == '02n') {
-      icon.src = "C:/Users/micor/OneDrive/Documents/GitHub/ecs162/hwk3/assets/clear-night.svg";
-    } else if (objectIcon == '03n' || objectIcon == '03d') {
-      icon.src = "C:/Users/micor/OneDrive/Documents/GitHub/ecs162/hwk3/assets/scatteredclouds.svg";
+    if (objectIcon == '01d') {
+      icon.src = "../assets/clearsky.svg";
+    } else if (objectIcon == '01n') {
+      icon.src = "../assets/clear-night.svg";
+    } else if (objectIcon == '02d') {
+      icon.src = "../assets/fewclouds-day.svg";
+    } else if (objectIcon == '02n') {
+      icon.src = "../assets/fewclouds-night.svg";
+    } else if (objectIcon == '03d' || objectIcon == '03n') {
+      icon.src = "../assets/scatteredclouds.svg";
     } else if (objectIcon == '04d' || objectIcon == '04n') {
-      icon.src = "C:/Users/micor/OneDrive/Documents/GitHub/ecs162/hwk3/assets/brokencloud.svg";
+      icon.src = "../assets/brokencloud.svg";
+    } else if (objectIcon == '09d' || objectIcon == '09n') {
+      icon.src = "../assets/showerrain.svg";
     } else if (objectIcon == '10d') {
-      icon.src = "C:/Users/micor/OneDrive/Documents/GitHub/ecs162/hwk3/assets/rain-day.svg";
+      icon.src = "../assets/rain-day.svg";
+    } else if (objectIcon == '10n') {
+      icon.src = "../assets/rain-night.svg";
+    } else if (objectIcon == '11d' || objectIcon == '11n') {
+      icon.src = "../assets/thunderstorms.svg";
+    } else if (objectIcon == '13d' || objectIcon == '13n') {
+      icon.src = "../assets/snow.svg";
     } else {
-      icon.src = "C:/Users/micor/OneDrive/Documents/GitHub/ecs162/hwk3/assets/snow.svg";
+      icon.src = "../assets/mist.svg";
     }
 
     current_temp.innerHTML = Math.round(object.list[0].main.temp) + "&deg;";
