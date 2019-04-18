@@ -1,0 +1,179 @@
+@media screen and (max-width: 480px) {
+    /* ----- PURPLE PORTION ----- */
+    html {
+        height: 100%;
+    }
+    .body {
+        display: flex;
+        flex-direction: column;
+        background: linear-gradient(rgb(73, 138, 220), rgb(98, 59, 156)) fixed;
+    }
+    .purple_display {
+        display: flex;
+        flex-direction: column;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 15%;
+        align-items: center;
+    }
+    .left_purple {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .title_block {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 10%;
+    }
+    span {
+        display: block;
+    }
+    #title {
+        font-family: 'IBM Plex Sans', sans-serif;
+        color: white;
+        font-weight: 500;
+        font-size: 30pt;
+        margin-bottom: 7%;
+    }
+    #subtitle {
+        font-family: 'IBM Plex Sans', sans-serif;
+        color: rgb(49, 49, 147);
+        font-size: 13.5pt;
+        font-weight: 500;
+    }
+    .input_block {
+        display: flex;
+        flex-direction: column;
+    }
+    #forecast_for {
+        font-size: 22pt;
+        font-weight: 500;
+        font-family: 'IBM Plex Sans', sans-serif;
+        color: white;
+    }
+    .field_and_button {
+        display: flex;
+        flex-direction: row;
+        margin-top: 5%;
+    }
+    #text_field {
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-weight: 300;
+        color: white;
+        font-size: 20pt;
+        background-color: rgb(45, 49, 146);
+        border: none;
+        outline: none;
+        padding-left: 10%;
+        width: 100%;
+    }
+    #btnSubmit {
+        font-family: 'IBM Plex Sans', sans-serif;
+        font-weight: 500;
+        font-size: 16pt;
+        color: white;
+        background-color: rgb(126, 137, 203);
+        border: none;
+        cursor: pointer;
+        outline: none;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+    #current {
+        font-family: 'Saira Extra Condensed', sans-serif;
+        color: white;
+        font-size: 35pt;
+    }
+    #current_time {
+        font-family: 'Saira Extra Condensed', sans-serif;
+        color: white;
+        font-size: 35pt;
+    }
+    #hr_purple {
+        border-color: black;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    #current_temp {
+        font-family: 'Saira Extra Condensed', sans-serif;
+        color: white;
+        font-size: 85pt;
+    }
+    .time_and_temp {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    #current_img {
+        width: 100%;
+        height: 100%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+    .time_purple {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #current {
+        margin-bottom: 2%;
+    }
+    #top1 {
+        display: none;
+    }
+    #top2 {
+        display: none;
+    }
+    #top3 {
+        display: none;
+    }
+    .right_purple {
+        display: none;
+    }
+    #up_arrow {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        outline: none;
+    }
+    #up_arrow_pic {
+        width: 10%;
+        height: 10%;
+        -webkit-filter: invert(100%);
+    }
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        color: white;
+        text-align: center;
+        padding-bottom: 2%;
+    }
+    .white_display {
+        display: none;
+        flex-direction: column;
+    }
+    .slider {
+        background-color: white;
+        height: 100vh;
+        width: 100vw;
+    }
+    .slidein {
+        animation-duration: 1s;
+        animation-name: slidein;
+        animation-direction: initial;
+    }
+    @keyframes slidein {
+        from {
+            margin-top: 100vh;
+            width: 100%
+        }
+        to {
+            margin-top: 0vh;
+            width: 100%;
+        }
+    }
+    /* ----- WHITE PORTION ----- */
+}

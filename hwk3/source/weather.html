@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+<html lang="eng">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="weather.css">
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,500" rel="stylesheet">
+</head>
+
+<body class="body">
+    <div class="purple_display">
+        <div class="left_purple">
+            <div class="title_block">
+                <h1 id="title"><span id="title1">Local Weather</span> <span id="title2">Six Hour Forecast</span></h1>
+                <h2 id="subtitle">Northern California with doppler radar</h2>
+            </div>
+            <div class="input_block">
+                <p id="forecast_for">Forecast for</p>
+                <div class="field_and_button">
+                    <input id="text_field">
+                    <button id="btnSubmit">submit</button>
+                </div>
+            </div>
+            <div class="current_forecast">
+                <img id="current_img"
+                    src="C:\Users\micor\OneDrive\Documents\GitHub\ecs162\hwk3\assets\fewclouds-day.svg">
+                <div class="time_and_temp">
+                    <div class="time_purple">
+                        <p id="current">current</p>
+                        <p id="current_time"></p>
+                    </div>
+                    <hr id="hr_purple">
+                    <p id="current_temp"></p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <button id="up_arrow" onclick="toggle()"><img id="up_arrow_pic"
+                    src="C:\Users\micor\OneDrive\Documents\GitHub\ecs162\hwk3\assets\up-arrow.png"></i></button>
+        </footer>
+        <div class="right_purple">
+            <img id="top1" src="C:\Users\micor\OneDrive\Documents\GitHub\ecs162\hwk3\assets\top1.jpg">
+            <img id="top2" src="C:\Users\micor\OneDrive\Documents\GitHub\ecs162\hwk3\assets\top2.gif">
+            <img id="top3" src="C:\Users\micor\OneDrive\Documents\GitHub\ecs162\hwk3\assets\top3.gif">
+        </div>
+    </div>
+    <div class="white_display">
+        <div class="slider">
+            this is a test
+        </div>
+    </div>
+
+    <script src="C:\Users\micor\OneDrive\Documents\GitHub\ecs162\hwk3\source\weather.js"></script>
+    <script src="C:\Users\micor\OneDrive\Documents\GitHub\ecs162\hwk3\source\makeRequest.js"></script>
+</body>
+
+</html>
