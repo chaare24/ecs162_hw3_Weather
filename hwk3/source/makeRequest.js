@@ -66,8 +66,7 @@ function makeCorsRequest() {
       tempTime.setHours(tempTime.getHours() + i);
       let time = tempTime.toLocaleString('en-US', { hour: 'numeric', hour12: true });
       if (current_time[i].classList.contains("white")) {
-        time = time.toLocaleString('en-US', { hour: 'numeric', hour12: true});
-        current_time[i].textContent = time.toString();
+        current_time[i].textContent = time.substring(0, time.search(' '))+ ":00" + time.substring(time.search(' ')).toLowerCase();
       } else {
         current_time[i].textContent = time.toString();
       }
