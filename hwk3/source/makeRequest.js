@@ -61,9 +61,9 @@ function makeCorsRequest() {
     let current_temp = document.getElementsByClassName("current_temp_class");
     let current_time = document.getElementsByClassName("current_time_class");
 
-    for (let i = 0; i < current_temp.length + 1; i++) {
+    for (let i = 0; i < current_temp.length; i++) {
       let tempTime = new Date();
-      tempTime.setHours(tempTime.getHours() + (i - 1));
+      tempTime.setHours(tempTime.getHours() + i);
       let time = tempTime.toLocaleString('en-US', { hour: 'numeric', hour12: true });
       current_time[i].textContent = time.toString();
 
