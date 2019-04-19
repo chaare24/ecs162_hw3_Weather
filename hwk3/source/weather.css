@@ -186,7 +186,6 @@
         margin-left: 50px;
         margin-right: 50px;
         border-bottom: 1px solid gray;
-
     }
     .slidein {
         animation-duration: 1s;
@@ -204,14 +203,25 @@
         }
     }
     /* ----- WHITE PORTION ----- */
+    #down_arrow {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        outline: none;
+    }
+    #down_arrow_pic {
+        width: 10%;
+        height: 10%;
+        transform: rotate(180deg);
+    }
 }
 
 /* tablet view */
-@media screen and (min-width: 481px) and (max-width: 850px) {
-    
 
-}
+@media screen and (min-width: 481px) and (max-width: 850px) {}
+
 /* Web view */
+
 @media screen and (min-width: 851px) {
     html {
         height: 100%;
@@ -221,7 +231,7 @@
         display: flex;
         flex-direction: column;
         font-family: 'IBM Plex Sans Medium', sans-serif;
-        overflow: hidden; 
+        overflow: hidden;
     }
     .purple_display {
         display: flex;
@@ -263,7 +273,7 @@
         padding-right: 40px;
     }
     .field_and_button {
-        flex-basis: 60%;   
+        flex-basis: 60%;
     }
     #text_field {
         width: 60%;
@@ -286,7 +296,7 @@
         border: none;
         height: 30px;
         padding: 20px;
-        margin: 0px 20px 0px 10px; 
+        margin: 0px 20px 0px 10px;
         vertical-align: middle;
         text-align: center;
         line-height: 10%;
@@ -303,11 +313,10 @@
         padding-left: 10%;
         padding-top: 30px;
         text-align: center;
-
     }
-    #current_img{
+    #current_img {
         width: 30%;
-        padding-left: 50px; 
+        padding-left: 50px;
     }
     #current_temp {
         flex-basis: 5%;

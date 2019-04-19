@@ -53,21 +53,21 @@ function makeCorsRequest() {
         icon[i].src = "../assets/mist.svg";
       }
     }
-    
+
     /* Phone View START*/
     let current_temp = document.getElementsByClassName("current_temp_class");
     let current_time = document.getElementsByClassName("current_time_class");
 
-    for (let i = 1; i < current_temp.length+1; i++) {
+    for (let i = 0; i < current_temp.length; i++) {
       let tempTime = new Date();
-      tempTime.setHours(tempTime.getHours()+(i-1));
+      tempTime.setHours(tempTime.getHours() + (i - 1));
       let time = tempTime.toLocaleString('en-US', { hour: 'numeric', hour12: true });
       current_time[i].textContent = time.toString();
 
-      current_temp[i].textContent = (Math.round(object.list[i].main.temp)).toString().concat('\xB0'); 
+      current_temp[i].textContent = (Math.round(object.list[i].main.temp)).toString().concat('\xB0');
     }
     /* Phone View END*/
-    
+
     console.log(JSON.stringify(object, undefined, 2));
   };
 
