@@ -11,8 +11,11 @@ function createCORSRequest(method, url) {
 
 // Make the actual CORS request.
 function makeCorsRequest() {
-  let url = "http://api.openweathermap.org/data/2.5/forecast/hourly?q=Davis,CA,US&units=imperial&APPID=5c8288289feda628e2a7dd6980597f2b"
-  let xhr = createCORSRequest('GET', url);
+  let key = ",US&units=imperial&APPID=5c8288289feda628e2a7dd6980597f2b";
+  let url = "http://api.openweathermap.org/data/2.5/forecast/hourly?q=";
+  let input = document.getElementById("text_field").value.toString().replace(/ /g, '+');
+  let fullUrl = url + input + key;
+  let xhr = createCORSRequest('GET', fullUrl);
   // checking if browser does CORS
   if (!xhr) {
     alert('CORS not supported');
@@ -79,5 +82,6 @@ function makeCorsRequest() {
   xhr.send();
 }
 
-// run this code to make request when this script file gets executed 
+// run this code to make request when this script file gets executed
 makeCorsRequest();
+
