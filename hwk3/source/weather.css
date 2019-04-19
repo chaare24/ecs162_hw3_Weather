@@ -183,6 +183,8 @@
         border: none;
         cursor: pointer;
         outline: none;
+        padding-top: 20px;
+        padding-bottom: 0px;
     }
     #down_arrow_pic {
         width: 10%;
@@ -202,11 +204,17 @@
     .days {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-evenly;
         font-family: 'Saira Extra Condensed', sans-serif;
+        padding-top: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+        border-bottom: 1px solid gray;
+        height: 100px;
+        overflow: hidden;
     }
     .five_day img {
-        width: 20%;
+        width: 40%;
     }
     .current_time_class {
         font-size: 25px;
@@ -216,11 +224,17 @@
         font-size: 65px;
         font-weight: 400;
     }
-    .days {
-        padding-top: 20px;
-        margin-left: 50px;
-        margin-right: 50px;
-        border-bottom: 1px solid gray;
+    #d1_weather, #d2_weather, #d3_weather, #d4_weather, #d5_weather {
+        padding-left: 30px;
+    }
+    #day1, #day2, #day3, #day4, #day5 {
+        margin-left: 20px;
+    }
+    #d1_time, #d2_time, #d3_time, #d4_time, #d5_time {
+        margin-right: -20px;
+    }
+    #d5 {
+        border: none;
     }
 }
 
@@ -407,6 +421,9 @@
     }
     .time_and_temp {
         padding-left: 6%;
+    }
+    #down_arrow {
+        display: none;
     }
     footer {
         display: none;
