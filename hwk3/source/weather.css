@@ -186,7 +186,7 @@
         border: none;
         cursor: pointer;
         outline: none;
-        padding-top: 20px;
+        padding-top: 2%;
         padding-bottom: 0px;
     }
     #down_arrow_pic {
@@ -199,6 +199,8 @@
         flex-direction: column;
         position: absolute;
         top: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
     }
     .slider {
         background-color: white;
@@ -208,30 +210,30 @@
     .days {
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-between;
         font-family: 'Saira Extra Condensed', sans-serif;
-        padding-top: 20px;
-        margin-left: 50px;
-        margin-right: 50px;
+        padding-top: 4.25%;
+        padding-bottom: 4.25%;
+        padding-right: 7%;
+        padding-left: 7%;
         border-bottom: 1px solid gray;
         height: 100px;
         overflow: hidden;
     }
     .five_day img {
-        width: 40%;
+        width: 35%;
     }
     .current_time_class {
-        font-size: 25px;
+        font-size: 30px;
         font-weight: 100;
     }
     .current_temp_class {
-        font-size: 65px;
+        font-size: 70px;
         font-weight: 400;
     }
     #d1_weather, #d2_weather, #d3_weather, #d4_weather, #d5_weather {
         padding-left: 20px;
         padding-top: 20px;
-        
     }
     #day1, #day2, #day3, #day4, #day5 {
         padding-left: 70px;
