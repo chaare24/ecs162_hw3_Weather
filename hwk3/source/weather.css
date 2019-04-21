@@ -247,11 +247,87 @@
     #d5 {
         border: none;
     }
+    .web {
+        display: hidden;
+    }
 }
 
 /* tablet view */
 
-@media screen and (min-width: 481px) and (max-width: 850px) {}
+@media screen and (min-width: 481px) and (max-width: 850px) {
+    .body {
+        display: flex;
+        flex-direction: column;
+        font-family: 'IBM Plex Sans Medium', sans-serif;
+    }
+    .purple_display {
+        display: flex;
+        flex-direction: column;
+        padding-left: 10%;
+        padding-top: 10%;
+        padding-right: 10%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to bottom, rgb(73, 138, 220) 10%, rgb(98, 59, 156) 80%);
+    }
+    .left_purple {
+        display: flex;
+        flex-direction: column;
+    }
+    .title_block {
+        text-align: center;
+        margin-bottom: 5%;
+    }
+    #title {
+        color: white;
+        font-size: 37.5pt;
+        font-weight: 400;
+        margin-bottom: 1%;
+    }
+    #subtitle {
+        color: rgb(49, 49, 147);
+        font-size: 30pt;
+        font-weight: 400;
+    }
+    .input_block {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        font-size: 22pt;
+        color: white;
+    }
+    #forecast_for {
+        padding-right: 2%;
+    }
+    .field_and_button {
+        flex-basis: 60%;
+    }
+    #text_field {
+        width: 70%;
+        height: 100%;
+        background-color: rgb(49, 49, 147);
+        font-size: 100%;
+        color: white;
+        border: none;
+        font-weight: 100;
+    }
+    /* input:focus {
+        outline-width: 0;
+    } */
+    #btnSubmit {
+        background-color: rgb(110, 138, 220);
+        font-size: 100%;
+        color: white;
+        border: none;
+        vertical-align: middle;
+        text-align: center;
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+    }
+}
 
 /* Web view */
 
