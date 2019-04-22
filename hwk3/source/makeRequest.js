@@ -60,7 +60,9 @@ function makeCorsRequest() {
     /* Phone View START*/
     let current_temp = document.getElementsByClassName("current_temp_class");
     let current_time = document.getElementsByClassName("current_time_class");
+    let current_time_web = document.getElementsByClassName("current_time_class_web");
 
+    if (window.innerWidth <= 480){
     for (let i = 0; i < current_temp.length; i++) {
       let tempTime = new Date();
       tempTime.setHours(tempTime.getHours() + i);
@@ -71,9 +73,26 @@ function makeCorsRequest() {
         current_time[i].textContent = time.toString();
       }
       
+      current_temp[i].textContent = (Math.round(object.list[i].main.temp)).toString().concat('\xB0');
+    }
+  } else {
+    for (let i = 0; i < current_temp.length; i++) {
+      let tempTime = new Date();
+      tempTime.setHours(tempTime.getHours() + i);
+      let time = tempTime.toLocaleString('en-US', { hour: 'numeric', hour12: true });
+      if (i == 0) {
+        current_time_web[i].textContent = time.toString();
+      }
+      if (current_time[i].classList.contains("white")) {
+        current_time[i].textContent = time.substring(0, time.search(' '))+ ":00" + time.substring(time.search(' ')).toLowerCase();
+      } else {
+        current_time[i].textContent = time.toString();
+      }
+      
 
       current_temp[i].textContent = (Math.round(object.list[i].main.temp)).toString().concat('\xB0');
     }
+  }
     /* Phone View END*/
 
     console.log(JSON.stringify(object, undefined, 2));
