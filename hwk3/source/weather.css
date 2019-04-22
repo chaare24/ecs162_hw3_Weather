@@ -124,6 +124,10 @@
         display: none;
     }
 
+    .right_purple_tablet {
+        display: none;
+    }
+
     .time_and_temp {
         display: flex;
         flex-direction: row;
@@ -323,13 +327,14 @@
         display: flex;
         flex-direction: column;
         font-family: 'IBM Plex Sans Medium', sans-serif;
+        height:100%;
     }
 
     .purple_display {
         display: flex;
         flex-direction: row;
         padding: 5% 5% 0% 5%;
-        background: pink;
+        background: linear-gradient(to bottom, rgb(73, 138, 220) 10%, rgb(98, 59, 156) 80%);
     }
 
     .left_purple {
@@ -341,12 +346,6 @@
         display: flex;
         flex-direction: column;
         text-align: center;
-        margin-bottom: 10%;
-        width: 100%;
-    }
-
-    span {
-        display: block;
     }
 
     #title {
@@ -354,7 +353,6 @@
         font-size: 45px;
         font-weight: 400;
         padding-bottom: 15px;
-        align-self: center;
     }
 
     #subtitle {
@@ -362,7 +360,6 @@
         font-size: 37px;
         font-weight: 400;
         padding-bottom: 20px;
-        align-self: center;
     }
 
     .input_block {
@@ -373,15 +370,13 @@
         color: white;
         font-size: 2vw;
         padding-bottom: 15px;
+        padding-left: 20px;
         white-space: nowrap;
-        text-align: center;
     }
 
     #forecast_for {
         margin: auto;
-        margin-right: 0;
-        margin-left: 5%;
-        margin-top: -0.25%;
+        margin: -0.25% 0 0 5%;
         padding-top: 8px;
         padding-right: 2%;
         font-size: 22px;
@@ -398,9 +393,7 @@
         color: white;
         border: none;
         font-weight: 300;
-        padding-left: 5%;
-        padding-top: 5px;
-        padding-bottom: 5px;
+        padding: 5px 0 5px 5%;
     }
 
     input:focus {
@@ -428,10 +421,14 @@
     .current_forecast {
         font-family: 'Saira Extra Condensed', sans-serif;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         color: white;
         font-weight: 100;
-        padding-bottom: 50px;
+        align-items: center;
+        text-align: center;
+        margin: 0 auto;
+        width: 80%;
+        padding-bottom: 5%;
     }
 
     .time_purple_web {
@@ -439,15 +436,14 @@
     }
 
     #current_img {
-        width: 30%;
-        padding-left: 50px;
+        width: 100%;
+        padding-left: 10px;
     }
 
     #current_temp {
         flex-basis: 5%;
-        padding-top: 20%;
-        padding-right: 15%;
-        font-size: 6vw;
+        padding: 0 15% 0 0;
+        font-size: 85px;
         text-align: center;
     }
 
@@ -467,8 +463,14 @@
         display: none;
     }
 
-    .right_purple img {
-        width: 25%;
+    .right_purple_tablet img {
+        margin-top: -10%;
+        width: 40%;
+    }
+
+    .left_tablet {
+        display: flex;
+        flex-direction: column;
     }
 
     #top1 {
@@ -505,18 +507,15 @@
         justify-content: center;
         flex-direction: row;
         text-align: center;
-        padding-top: 20px;
     }
 
     .five_day img {
-        padding-top: 20px;
-        padding-bottom: 20px;
-        width: 55%;
+        padding: 50px 10px 0px 10px;
+        width:80%;
+
     }
 
     .days {
-        padding-left: 50px;
-        padding-right: 60px;
         border-left: 1px solid gray;
     }
 
@@ -524,21 +523,22 @@
         border: none;
     }
 
+    #d1_time, #d2_time, #d3_time, #d4_time, #d5_time {
+        padding-top: 50px;
+    }
+
     .current_time_class {
         font-size: 25px;
     }
 
     .current_temp_class {
+        padding: 35px 0 100px 0;
         font-size: 75px;
     }
 
     #current,
     #current_time {
         font-size: 35px;
-    }
-
-    #current_temp {
-        font-size: 85px;
     }
 
     .time_purple_web {
@@ -548,7 +548,8 @@
     .time_and_temp {
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        align-self: center;
+        padding: 20px 0 0 10px;
     }
 
     #down_arrow {
@@ -669,6 +670,11 @@
         padding-bottom: 50px;
     }
 
+    .left_tablet {
+        display: flex;
+        flex-direction: row;
+    }
+
     .time_purple_web {
         padding-left: 10%;
         padding-top: 30px;
@@ -676,7 +682,7 @@
     }
 
     #current_img {
-        width: 30%;
+        width: 70%;
         padding-left: 50px;
     }
 
@@ -705,6 +711,10 @@
 
     .right_purple img {
         width: 25%;
+    }
+
+    .right_purple_tablet {
+        display: none;
     }
 
     #top1 {
