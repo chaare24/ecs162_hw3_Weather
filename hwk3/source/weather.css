@@ -1,17 +1,14 @@
 @media screen and (max-width: 480px) {
-
     /* ----- PURPLE PORTION ----- */
     html {
         height: 100%;
     }
-
     .body {
         display: flex;
         flex-direction: column;
         background: linear-gradient(rgb(73, 138, 220), rgb(98, 59, 156)) fixed;
         overflow: hidden;
     }
-
     .purple_display {
         display: flex;
         flex-direction: column;
@@ -20,24 +17,20 @@
         padding-top: 15%;
         align-items: center;
     }
-
     .left_purple {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-
     .title_block {
         display: flex;
         flex-direction: column;
         text-align: center;
         margin-bottom: 10%;
     }
-
     span {
         display: block;
     }
-
     #title {
         font-family: 'IBM Plex Sans', sans-serif;
         color: white;
@@ -45,32 +38,27 @@
         font-size: 2.2em;
         margin-bottom: 7%;
     }
-
     #subtitle {
         font-family: 'IBM Plex Sans', sans-serif;
         color: rgb(49, 49, 147);
         font-size: 1.13em;
         font-weight: 500;
     }
-
     .input_block {
         display: flex;
         flex-direction: column;
     }
-
     #forecast_for {
         font-size: 1.84em;
         font-weight: 500;
         font-family: 'IBM Plex Sans', sans-serif;
         color: white;
     }
-
     .field_and_button {
         display: flex;
         flex-direction: row;
         margin-top: 5%;
     }
-
     #text_field {
         font-family: 'IBM Plex Sans', sans-serif;
         font-weight: 300;
@@ -82,7 +70,6 @@
         padding-left: 10%;
         width: 100%;
     }
-
     #btnSubmit {
         font-family: 'IBM Plex Sans', sans-serif;
         font-weight: 500;
@@ -95,122 +82,99 @@
         padding-left: 5%;
         padding-right: 5%;
     }
-
     #current {
         font-family: 'Saira Extra Condensed', sans-serif;
         color: white;
         font-size: 3em;
     }
-
     #current_time {
         font-family: 'Saira Extra Condensed', sans-serif;
         color: white;
         font-size: 3em;
     }
-
     #hr_purple {
         border-color: black;
         margin-left: 10%;
         margin-right: 10%;
     }
-
     #current_temp {
         font-family: 'Saira Extra Condensed', sans-serif;
         color: white;
         font-size: 7.71em;
     }
-
     .time_purple_web {
         display: none;
     }
-
     .right_purple_tablet {
         display: none;
     }
-
     .time_and_temp {
         display: flex;
         flex-direction: row;
         justify-content: center;
     }
-
     #current_img {
         width: 100%;
         height: 100%;
         margin-top: 10%;
         margin-bottom: 10%;
     }
-
     .time_purple {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-
     #current {
         margin-bottom: 2%;
     }
-
     #top1 {
         display: none;
     }
-
     #top2 {
         display: none;
     }
-
     #top3 {
         display: none;
     }
-
     .right_purple {
         display: none;
     }
-
     #up_arrow {
         background-color: transparent;
         border: none;
         cursor: pointer;
         outline: none;
     }
-
     #up_arrow_pic {
         width: 10%;
         height: 10%;
         -webkit-filter: invert(100%);
     }
-
     .open {
         animation-duration: 1s;
         animation-name: open;
         animation-fill-mode: forwards;
     }
-
     .closed {
         animation-duration: 1s;
         animation-name: closed;
     }
-
     @keyframes open {
         from {
             top: 100%;
         }
-
         to {
             top: 0%;
         }
     }
-
     @keyframes closed {
         from {
             top: 0%;
         }
-
         to {
             top: 100%;
         }
     }
-
     footer {
         position: fixed;
         bottom: 0;
@@ -219,7 +183,6 @@
         text-align: center;
         padding-bottom: 2%;
     }
-
     #down_arrow {
         background-color: transparent;
         border: none;
@@ -228,13 +191,11 @@
         padding-top: 2%;
         padding-bottom: 0px;
     }
-
     #down_arrow_pic {
         width: 10%;
         height: 10%;
         transform: rotate(180deg);
     }
-
     .white_display {
         display: flex;
         flex-direction: column;
@@ -243,13 +204,11 @@
         margin-left: 0%;
         margin-right: 0%;
     }
-
     .slider {
         background-color: white;
         height: 100vh;
         width: 100vw;
     }
-
     .days {
         display: flex;
         flex-direction: row;
@@ -263,53 +222,33 @@
         height: 100px;
         overflow: hidden;
     }
-
     .five_day img {
         width: 35%;
     }
-
     .current_time_class {
         font-size: 30px;
         font-weight: 100;
     }
-
     .current_temp_class {
         font-size: 70px;
         font-weight: 400;
     }
-
-    #d1_weather,
-    #d2_weather,
-    #d3_weather,
-    #d4_weather,
-    #d5_weather {
+    #d1_weather, #d2_weather, #d3_weather, #d4_weather, #d5_weather {
         padding-left: 20px;
         padding-top: 20px;
     }
-
-    #day1,
-    #day2,
-    #day3,
-    #day4,
-    #day5 {
+    #day1, #day2, #day3, #day4, #day5 {
         padding-left: 70px;
         margin-left: 50px;
     }
-
-    #d1_time,
-    #d2_time,
-    #d3_time,
-    #d4_time,
-    #d5_time {
+    #d1_time, #d2_time, #d3_time, #d4_time, #d5_time {
         padding-top: 35px;
         padding-left: 20px;
         margin-right: -80px;
     }
-
     #d5 {
         border: none;
     }
-
     .web {
         display: hidden;
     }
@@ -321,7 +260,6 @@
     html {
         height: 100%;
     }
-
     .body {
         display: flex;
         flex-direction: column;
@@ -329,7 +267,6 @@
         height: 100%;
         overflow: hidden;
     }
-
     .purple_display {
         display: flex;
         flex-direction: row;
@@ -338,32 +275,27 @@
         padding: 5% 5% 0% 5%;
         background: linear-gradient(to bottom, rgb(73, 138, 220) 10%, rgb(98, 59, 156) 80%);
     }
-
     .left_purple {
         display: flex;
         flex-direction: column;
     }
-
     .title_block {
         display: flex;
         flex-direction: column;
         text-align: center;
     }
-
     #title {
         color: white;
         font-size: 2.4em;
         font-weight: 400;
         padding-bottom: 0.5%;
     }
-
     #subtitle {
         color: rgb(49, 49, 147);
         font-size: 2.0em;
         font-weight: 400;
         padding-bottom: 5%;
     }
-
     .input_block {
         display: flex;
         flex-direction: row;
@@ -372,13 +304,11 @@
         font-size: 0.8em;
         padding-bottom: 5%;
     }
-
     #forecast_for {
         margin: 1% 2% 1% 0%;
         font-size: 1.5em;
         font-weight: bold;
     }
-
     #text_field {
         margin-right: 2.5%;
         width: 75%;
@@ -390,11 +320,9 @@
         font-weight: 300;
         padding: 1% 5% 1% 5%;
     }
-
     input:focus {
         outline-width: 0;
     }
-
     #btnSubmit {
         font-family: 'IBM Plex Sans', sans-serif;
         background-color: rgb(73, 138, 220);
@@ -409,12 +337,10 @@
         line-height: 10%;
         padding: 3%;
     }
-
     .field_and_button {
         display: flex;
         flex-direction: row;
     }
-
     .current_forecast {
         font-family: 'Saira Extra Condensed', sans-serif;
         display: flex;
@@ -426,69 +352,53 @@
         width: 100%;
         padding-bottom: 5%;
     }
-
     .time_purple_web {
         display: none;
     }
-
     #current_img {
         width: 90%;
     }
-
     #current_temp {
         flex-basis: 5%;
         padding: 0 15% 0 0;
         font-size: 85px;
         text-align: center;
     }
-
     .time_purple {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-
-
     #hr_purple {
         border-color: black;
         margin-left: 10%;
         margin-right: 10%;
     }
-
     .right_purple {
         display: none;
     }
-
     .right_purple_tablet img {
-        width: 40vw;
-        height: 40vw;
+        width: 45vw;
+        height: 45vw;
         margin-left: 5%;
     }
-
     .left_tablet {
         display: flex;
         flex-direction: column;
     }
-
     #top1 {
         border-radius: 50%;
         position: absolute;
-        z-index: 1;
         -webkit-filter: grayscale(100%);
         filter: grayscale(100%);
     }
-
     #top2 {
         border-radius: 50%;
         position: absolute;
-        z-index: 2;
     }
-
     #top3 {
         position: relative;
-        z-index: 3;
     }
-
     .white_display {
         display: flex;
         flex-direction: column;
@@ -496,7 +406,6 @@
         justify-content: space-around;
         background: linear-gradient(to top, white 90%, gray 100%);
     }
-
     .five_day {
         display: flex;
         justify-content: space-evenly;
@@ -504,53 +413,40 @@
         height: 100vh;
         text-align: center;
     }
-
     .five_day img {
         padding: 25% 10px 25% 10px;
         width: 15vw;
-
     }
-
     .days {
         border-left: 1px solid gray;
     }
-
     #d1 {
         border: none;
     }
-
     #d1_time, #d2_time, #d3_time, #d4_time, #d5_time {
         margin-top: 50%;
     }
-
     .current_time_class {
         font-size: 25px;
     }
-
     .current_temp_class {
         font-size: 75px;
     }
-
-    #current,
-    #current_time {
+    #current, #current_time {
         font-size: 2.5em;
     }
-
     .time_purple_web {
         font-size: 35px;
     }
-
     .time_and_temp {
         display: flex;
         flex-direction: row;
         align-self: center;
         padding: 20px 0 0 10px;
     }
-
     #down_arrow {
         display: none;
     }
-
     footer {
         display: none;
     }
@@ -563,14 +459,12 @@
         height: 100%;
         overflow: hidden;
     }
-
     .body {
         display: flex;
         flex-direction: column;
         font-family: 'IBM Plex Sans Medium', sans-serif;
         overflow: hidden;
     }
-
     .purple_display {
         display: flex;
         flex-direction: row;
@@ -579,13 +473,11 @@
         padding-right: 0px;
         background: linear-gradient(to bottom, rgb(73, 138, 220) 10%, rgb(98, 59, 156) 80%);
     }
-
     .left_purple {
         display: flex;
         flex-direction: column;
         flex-basis: 60%;
     }
-
     #title {
         color: white;
         font-size: 45px;
@@ -593,14 +485,12 @@
         padding-bottom: 15px;
         white-space: nowrap;
     }
-
     #subtitle {
         color: rgb(49, 49, 147);
         font-size: 33px;
         font-weight: 400;
         padding-bottom: 35px;
     }
-
     .input_block {
         display: flex;
         flex-direction: row;
@@ -611,17 +501,14 @@
         padding-bottom: 15px;
         white-space: nowrap;
     }
-
     #forecast_for {
         font-size: 22px;
         padding-top: 8px;
         padding-right: 20px;
     }
-
     .field_and_button {
         flex-basis: 60%;
     }
-
     #text_field {
         width: 60%;
         height: 64%;
@@ -634,11 +521,9 @@
         padding-top: 5px;
         padding-bottom: 5px;
     }
-
     input:focus {
         outline-width: 0;
     }
-
     #btnSubmit {
         font-family: 'IBM Plex Sans', sans-serif;
         background-color: rgb(73, 138, 220);
@@ -655,7 +540,6 @@
         line-height: 10%;
         padding-right: 5%;
     }
-
     .current_forecast {
         font-family: 'Saira Extra Condensed', sans-serif;
         display: flex;
@@ -664,23 +548,19 @@
         font-weight: 100;
         padding-bottom: 50px;
     }
-
     .left_tablet {
         display: flex;
         flex-direction: row;
     }
-
     .time_purple_web {
         padding-left: 10%;
         padding-top: 30px;
         text-align: center;
     }
-
     #current_img {
         width: 70%;
         padding-left: 50px;
     }
-
     #current_temp {
         flex-basis: 5%;
         padding-top: 20%;
@@ -688,30 +568,24 @@
         font-size: 6vw;
         text-align: center;
     }
-
     .time_purple {
         display: none;
     }
-
     #hr_purple {
         display: none;
     }
-
     .right_purple {
         display: flex;
         flex-basis: 35%;
         justify-content: center;
         align-items: center;
     }
-
     .right_purple img {
         width: 25%;
     }
-
     .right_purple_tablet {
         display: none;
     }
-
     #top1 {
         border-radius: 50%;
         position: absolute;
@@ -719,18 +593,15 @@
         -webkit-filter: grayscale(100%);
         filter: grayscale(100%);
     }
-
     #top2 {
         border-radius: 50%;
         position: absolute;
         z-index: 2;
     }
-
     #top3 {
         position: relative;
         z-index: 3;
     }
-
     .white_display {
         display: flex;
         flex-direction: column;
@@ -740,7 +611,6 @@
         background: linear-gradient(to top, white 85%, gray 100%);
         height: 400px;
     }
-
     .five_day {
         display: flex;
         justify-content: center;
@@ -748,52 +618,40 @@
         text-align: center;
         padding-top: 20px;
     }
-
     .five_day img {
         padding-top: 20px;
         padding-bottom: 20px;
         width: 55%;
     }
-
     .days {
         padding-left: 50px;
         padding-right: 60px;
         border-left: 1px solid gray;
     }
-
     #d1 {
         border: none;
     }
-
     .current_time_class {
         font-size: 25px;
     }
-
     .current_temp_class {
         font-size: 75px;
     }
-
-    #current,
-    #current_time {
+    #current, #current_time {
         font-size: 35px;
     }
-
     #current_temp {
         font-size: 85px;
     }
-
     .time_purple_web {
         font-size: 35px;
     }
-
     .time_and_temp {
         padding-left: 6%;
     }
-
     #down_arrow {
         display: none;
     }
-
     footer {
         display: none;
     }

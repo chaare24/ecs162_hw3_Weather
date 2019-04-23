@@ -14,11 +14,9 @@ function makeCorsRequest() {
   let key = ",US&units=imperial&APPID=5c8288289feda628e2a7dd6980597f2b";
   let url = "http://api.openweathermap.org/data/2.5/forecast/hourly?q=";
   let input = document.getElementById("text_field").value.toString().replace(/ /g, '+');
-  console.log(input);
   input = input.split(',')[0];
   let fullUrl = url + input + key;
   let xhr = createCORSRequest('GET', fullUrl);
-  console.log(input);
   // checking if browser does CORS
   if (!xhr) {
     alert('CORS not supported');
@@ -123,7 +121,7 @@ function makeCorsRequest() {
     }
 
 
-    console.log(JSON.stringify(object, undefined, 2));
+    // console.log(JSON.stringify(object, undefined, 2));
 
 
   };
