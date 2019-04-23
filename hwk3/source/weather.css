@@ -99,13 +99,13 @@
     #current {
         font-family: 'Saira Extra Condensed', sans-serif;
         color: white;
-        font-size: 2.93em;
+        font-size: 3em;
     }
 
     #current_time {
         font-family: 'Saira Extra Condensed', sans-serif;
         color: white;
-        font-size: 2.93em;
+        font-size: 3em;
     }
 
     #hr_purple {
@@ -189,7 +189,6 @@
     .closed {
         animation-duration: 1s;
         animation-name: closed;
-        /* animation-fill-mode: forwards; */
     }
 
     @keyframes open {
@@ -495,7 +494,7 @@
         flex-direction: column;
         font-family: 'Saira Extra Condensed', sans-serif;
         justify-content: space-around;
-        background: linear-gradient(to top, white 85%, gray 100%);
+        background: linear-gradient(to top, white 90%, gray 100%);
     }
 
     .five_day {
@@ -521,7 +520,7 @@
     }
 
     #d1_time, #d2_time, #d3_time, #d4_time, #d5_time {
-        margin-top: 30%;
+        margin-top: 50%;
     }
 
     .current_time_class {
