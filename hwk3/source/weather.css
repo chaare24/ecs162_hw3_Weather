@@ -42,14 +42,14 @@
         font-family: 'IBM Plex Sans', sans-serif;
         color: white;
         font-weight: 500;
-        font-size: 30pt;
+        font-size: 2.2em;
         margin-bottom: 7%;
     }
 
     #subtitle {
         font-family: 'IBM Plex Sans', sans-serif;
         color: rgb(49, 49, 147);
-        font-size: 13.5pt;
+        font-size: 1.13em;
         font-weight: 500;
     }
 
@@ -59,7 +59,7 @@
     }
 
     #forecast_for {
-        font-size: 22pt;
+        font-size: 1.84em;
         font-weight: 500;
         font-family: 'IBM Plex Sans', sans-serif;
         color: white;
@@ -75,7 +75,7 @@
         font-family: 'IBM Plex Sans', sans-serif;
         font-weight: 300;
         color: white;
-        font-size: 20pt;
+        font-size: 1.67em;
         background-color: rgb(45, 49, 146);
         border: none;
         outline: none;
@@ -86,7 +86,7 @@
     #btnSubmit {
         font-family: 'IBM Plex Sans', sans-serif;
         font-weight: 500;
-        font-size: 16pt;
+        font-size: 1.34em;
         color: white;
         background-color: rgb(126, 137, 203);
         border: none;
@@ -99,13 +99,13 @@
     #current {
         font-family: 'Saira Extra Condensed', sans-serif;
         color: white;
-        font-size: 35pt;
+        font-size: 2.93em;
     }
 
     #current_time {
         font-family: 'Saira Extra Condensed', sans-serif;
         color: white;
-        font-size: 35pt;
+        font-size: 2.93em;
     }
 
     #hr_purple {
@@ -117,7 +117,7 @@
     #current_temp {
         font-family: 'Saira Extra Condensed', sans-serif;
         color: white;
-        font-size: 85pt;
+        font-size: 7.71em;
     }
 
     .time_purple_web {
@@ -327,12 +327,15 @@
         display: flex;
         flex-direction: column;
         font-family: 'IBM Plex Sans Medium', sans-serif;
-        height:100%;
+        height: 100%;
+        overflow: hidden;
     }
 
     .purple_display {
         display: flex;
         flex-direction: row;
+        align-items: center;
+        justify-content: center;
         padding: 5% 5% 0% 5%;
         background: linear-gradient(to bottom, rgb(73, 138, 220) 10%, rgb(98, 59, 156) 80%);
     }
@@ -350,50 +353,43 @@
 
     #title {
         color: white;
-        font-size: 45px;
+        font-size: 2.4em;
         font-weight: 400;
-        padding-bottom: 15px;
+        padding-bottom: 0.5%;
     }
 
     #subtitle {
         color: rgb(49, 49, 147);
-        font-size: 37px;
+        font-size: 2.0em;
         font-weight: 400;
-        padding-bottom: 20px;
+        padding-bottom: 5%;
     }
 
     .input_block {
         display: flex;
         flex-direction: row;
-        flex-basis: 10%;
-        flex-wrap: wrap;
+        justify-content: center;
         color: white;
-        font-size: 2vw;
-        padding-bottom: 15px;
-        padding-left: 20px;
-        white-space: nowrap;
+        font-size: 0.8em;
+        padding-bottom: 5%;
     }
 
     #forecast_for {
-        margin: auto;
-        margin: -0.25% 0 0 5%;
-        padding-top: 8px;
-        padding-right: 2%;
-        font-size: 22px;
-        font-weight: 400;
-        white-space: nowrap;
+        margin: 1% 2% 1% 0%;
+        font-size: 1.5em;
+        font-weight: bold;
     }
 
     #text_field {
-        margin: auto;
+        margin-right: 2.5%;
         width: 75%;
-        height: 64%;
+        height: 65%;
         background-color: rgb(49, 49, 147);
-        font-size: 20pt;
+        font-size: 1.67em;
         color: white;
         border: none;
         font-weight: 300;
-        padding: 5px 0 5px 5%;
+        padding: 1% 5% 1% 5%;
     }
 
     input:focus {
@@ -401,21 +397,23 @@
     }
 
     #btnSubmit {
-        margin: auto;
         font-family: 'IBM Plex Sans', sans-serif;
         background-color: rgb(73, 138, 220);
         color: white;
-        font-size: 16pt;
+        font-size: 1.34em;
         font-weight: 500;
         border: none;
-        height: 64%;
-        padding: 20px;
-        margin: -3px 20px 0px 10px;
+        height: 100%;
         cursor: pointer;
         vertical-align: middle;
         text-align: center;
         line-height: 10%;
-        padding-right: 5%;
+        padding: 3%;
+    }
+
+    .field_and_button {
+        display: flex;
+        flex-direction: row;
     }
 
     .current_forecast {
@@ -423,11 +421,10 @@
         display: flex;
         flex-direction: row;
         color: white;
-        font-weight: 100;
-        align-items: center;
+        align-items: flex-start;
+        justify-content: space-around;
         text-align: center;
-        margin: 0 auto;
-        width: 80%;
+        width: 100%;
         padding-bottom: 5%;
     }
 
@@ -436,8 +433,7 @@
     }
 
     #current_img {
-        width: 100%;
-        padding-left: 10px;
+        width: 90%;
     }
 
     #current_temp {
@@ -453,6 +449,7 @@
         align-items: center;
     }
 
+
     #hr_purple {
         border-color: black;
         margin-left: 10%;
@@ -464,8 +461,9 @@
     }
 
     .right_purple_tablet img {
-        margin-top: -10%;
-        width: 40%;
+        width: 40vw;
+        height: 40vw;
+        margin-left: 5%;
     }
 
     .left_tablet {
@@ -495,23 +493,22 @@
     .white_display {
         display: flex;
         flex-direction: column;
-        position: relative;
         font-family: 'Saira Extra Condensed', sans-serif;
-        align-items: center;
+        justify-content: space-around;
         background: linear-gradient(to top, white 85%, gray 100%);
-        height: 400px;
     }
 
     .five_day {
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         flex-direction: row;
+        height: 100vh;
         text-align: center;
     }
 
     .five_day img {
-        padding: 50px 10px 0px 10px;
-        width:80%;
+        padding: 25% 10px 25% 10px;
+        width: 15vw;
 
     }
 
@@ -524,7 +521,7 @@
     }
 
     #d1_time, #d2_time, #d3_time, #d4_time, #d5_time {
-        padding-top: 50px;
+        margin-top: 30%;
     }
 
     .current_time_class {
@@ -532,13 +529,12 @@
     }
 
     .current_temp_class {
-        padding: 35px 0 100px 0;
         font-size: 75px;
     }
 
     #current,
     #current_time {
-        font-size: 35px;
+        font-size: 2.5em;
     }
 
     .time_purple_web {
@@ -631,7 +627,7 @@
         width: 60%;
         height: 64%;
         background-color: rgb(49, 49, 147);
-        font-size: 20pt;
+        font-size: 1.67em;
         color: white;
         border: none;
         font-weight: 300;
@@ -648,7 +644,7 @@
         font-family: 'IBM Plex Sans', sans-serif;
         background-color: rgb(73, 138, 220);
         color: white;
-        font-size: 16pt;
+        font-size: 1.34em;
         font-weight: 500;
         border: none;
         height: 30px;
