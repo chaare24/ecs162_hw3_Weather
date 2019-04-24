@@ -44,8 +44,10 @@ function makeCorsRequest() {
 
     if (lat <= 40.75 && lat >= 36.40 && lon <= -118.65 && lon >= -124.17) {
       let icon = document.getElementsByClassName("current_img_class");
+
       for (let i = 0; i < icon.length; i++) {
         let objectIcon = object.list[i].weather[0].icon;
+
         if (objectIcon == '01d') {
           icon[i].src = "../assets/clearsky.svg";
         } else if (objectIcon == '01n') {
@@ -111,17 +113,18 @@ function makeCorsRequest() {
         }
       }
     } else {
-      current_time[0].textContent = "Out of Bounds";
-      current_temp[0].textContent = "";
-      let current_word = document.getElementById("current").style.display = "none";
-      let hr = document.getElementById("hr_purple").style.display = "none";
-
-      let white = document.getElementsByClassName("white_display")[0];
-      white.style.display = "none";
+      for (let i = 0; i < current_time.length; i++) {
+        current_time[i].textContent = "Out of Bounds";
+        current_temp[i].textContent = "";
+      }
+      document.getElementById("current").style.display = "none";
+      document.getElementById("hr_purple").style.display = "none";
+      alert('Out of Bounds Query');
+      return;
     }
 
 
-    // console.log(JSON.stringify(object, undefined, 2));
+    console.log(JSON.stringify(object, undefined, 2));
 
 
   };
