@@ -722,7 +722,7 @@
         z-index: 2;
     }
 
-    #top3 {
+    #top3_1 {
         position: relative;
         z-index: 3;
     }
@@ -731,7 +731,7 @@
         display: flex;
         flex-direction: column;
         font-family: 'Saira Extra Condensed', sans-serif;
-        align-items: flex-start;
+        align-items: center;
         justify-content: space-around;
         background: linear-gradient(to top, white 70%, gray 100%);
     }

@@ -1,6 +1,5 @@
-
-let imageArray = []  // global variable to hold stack of images for animation 
-let count = 0;          // global var
+let imageArray = [] // global variable to hold stack of images for animation 
+let count = 0; // global var
 
 
 function addToArray(newImage) {
@@ -47,7 +46,7 @@ function tryToGetImage(dateObj) {
 
 
 function getTenImages() {
-	let dateObj = new Date();  // defaults to current date and time
+	let dateObj = new Date(); // defaults to current date and time
 	// if we try 150 images, and get one out of every 10, we should get enough
 	for (let i = 0; i < 150; i++) {
 		newImage = tryToGetImage(dateObj);
@@ -57,17 +56,13 @@ function getTenImages() {
 
 function displayImages(count) {
 	myimg = document.getElementById("top3");
+	myimg_web = document.getElementById("top3_1");
 
 	myimg.src = imageArray[count].src;
+	myimg_web.src = imageArray[count].src;
 
 	count += 1;
 	return count;
 }
 
 getTenImages();
-
-
-
-
-
-
