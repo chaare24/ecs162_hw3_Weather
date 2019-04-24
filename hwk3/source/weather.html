@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 
-<html lang="eng">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
+    <title>Weather Web Application</title>
     <link rel="stylesheet" type="text/css" href="reset.css">
     <link rel="stylesheet" type="text/css" href="weather.css">
     <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:300" rel="stylesheet">
@@ -31,7 +32,7 @@
                     <p id="current_time_web" class="current_time_class_web">12PM</p>
                 </div>
                 <span class="left_tablet">
-                    <img id="current_img" class="current_img_class" src="..\assets\fewclouds-day.svg">
+                    <img id="current_img" class="current_img_class" alt="Cannot display" src="../assets/fewclouds-day.svg">
                     <div class="time_and_temp">
                         <div class="time_purple">
                             <p id="current">current</p>
@@ -42,30 +43,30 @@
                     </div>
                 </span>
                 <div class="right_purple_tablet">
-                    <img id="top1" src="..\assets\top1.jpg">
-                    <img id="top2" src="..\assets\top2.gif">
-                    <img id="top3" src="..\assets\top3.gif">
+                    <img id="top1" alt="Cannot display" src="../assets/top1.jpg">
+                    <img id="top2" alt="Cannot display" src="../assets/top2.gif">
+                    <img id="top3" alt="Cannot display" src="../assets/top3.gif">
                 </div>
             </div>
         </div>
         <footer>
-            <button id="up_arrow" onclick="toggle()"><img id="up_arrow_pic" src="..\assets\up-arrow.png"></i></button>
+            <button id="up_arrow" onclick="toggle()"><img id="up_arrow_pic" alt="Cannot display" src="../assets/up-arrow.png"></button>
         </footer>
 
         <div class="right_purple">
-            <img id="top1" src="..\assets\top1.jpg">
-            <img id="top2" src="..\assets\top2.gif">
-            <img id="top3_1" src="..\assets\top3.gif">
+            <img id="top1_1" alt="Cannot display" src="../assets/top1.jpg">
+            <img id="top2_1" alt="Cannot display" src="../assets/top2.gif">
+            <img id="top3_1" alt="Cannot display" src="../assets/top3.gif">
         </div>
     </div>
     <div class="white_display">
         <div class="slider">
-            <button id="down_arrow" onclick="toggle()"><img id="down_arrow_pic" src="..\assets\up-arrow.png"></button>
+            <button id="down_arrow" onclick="toggle()"><img id="down_arrow_pic" alt="Cannot display" src="../assets/up-arrow.png"></button>
             <div class="five_day">
                 <div id="d1" class="days">
                     <p id="d1_time" class="current_time_class white">time error</p>
                     <div class="wrapper">
-                        <img id="day1" class="current_img_class" src="..\assets\scatteredclouds.svg">
+                        <img id="day1" alt="Cannot display" class="current_img_class" src="../assets/scatteredclouds.svg">
                     </div>
                     <p id="d1_weather" class="current_temp_class white">temp error</p>
                 </div>
@@ -73,7 +74,7 @@
                 <div id="d2" class="days">
                     <p id="d2_time" class="current_time_class white">time error</p>
                     <div class="wrapper">
-                        <img id="day2" class="current_img_class" src="..\assets\showerrain.svg">
+                        <img id="day2" alt="Cannot display" class="current_img_class" src="../assets/showerrain.svg">
                     </div>
                     <p id="d2_weather" class="current_temp_class white">temp error<p>
                 </div>
@@ -81,7 +82,7 @@
                 <div id="d3" class="days">
                     <p id="d3_time" class="current_time_class white">time error</p>
                     <div class="wrapper">
-                        <img id="day3" class="current_img_class" src="..\assets\fewclouds-day.svg">
+                        <img id="day3" alt="Cannot display" class="current_img_class" src="../assets/fewclouds-day.svg">
                     </div>
                     <p id="d3_weather" class="current_temp_class white">temp error<p>
                 </div>
@@ -89,7 +90,7 @@
                 <div id="d4" class="days">
                     <p id="d4_time" class="current_time_class white">time error</p>
                     <div class="wrapper">
-                        <img id="day4" class="current_img_class" src="..\assets\clearsky.svg">
+                        <img id="day4" alt="Cannot display" class="current_img_class" src="../assets/clearsky.svg">
                     </div>
                     <p id="d4_weather" class="current_temp_class white">temp error<p>
                 </div>
@@ -97,7 +98,7 @@
                 <div id="d5" class="days">
                     <p id="d5_time" class="current_time_class white">time error</p>
                     <div class="wrapper">
-                        <img id="day5" class="current_img_class" src="..\assets\clearsky.svg">
+                        <img id="day5" alt="Cannot display" class="current_img_class" src="../assets/clearsky.svg">
                     </div>
                     <p id="d5_weather" class="current_temp_class white">temp error</p>
                 </div>
@@ -105,9 +106,9 @@
         </div>
     </div>
 
-    <script src="..\source\weather.js"></script>
-    <script src="..\source\makeRequest.js"></script>
-    <script src="..\source\collectPastDoppler.js"></script>
+    <script src="../source/weather.js"></script>
+    <script src="../source/makeRequest.js"></script>
+    <script src="../source/collectPastDoppler.js"></script>
 </body>
 
 </html>

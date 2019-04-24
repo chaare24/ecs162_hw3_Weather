@@ -311,7 +311,7 @@
     }
 
     .web {
-        display: hidden;
+        display: none;
     }
 }
 
@@ -719,7 +719,7 @@
         display: none;
     }
 
-    #top1 {
+    #top1_1 {
         border-radius: 50%;
         position: absolute;
         z-index: 1;
@@ -727,7 +727,7 @@
         filter: grayscale(100%);
     }
 
-    #top2 {
+    #top2_1 {
         border-radius: 50%;
         position: absolute;
         z-index: 2;
