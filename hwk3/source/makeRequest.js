@@ -114,7 +114,7 @@ function makeCorsRequest() {
       }
     } else {
       for (let i = 0; i < current_time.length; i++) {
-        current_time[i].textContent = "Out of Bounds";
+        current_time[i].textContent = "Not Found";
         current_temp[i].textContent = "";
       }
       document.getElementById("current").style.display = "none";
